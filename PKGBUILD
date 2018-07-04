@@ -10,9 +10,11 @@ url="https://rocket.chat"
 options=()
 
 source_x86_64=("https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/${pkgver}/rocketchat_${pkgver}_amd64.deb"
-               "rocketchat.sh")
+               "rocketchat.sh"
+               "rocketchat.desktop")
 md5sums_x86_64=('77fdb26dd69034f8fc0fdda49bce4b7e'
-                '06d1a6b04291d97e4d70f33e42a8a0a3')
+                'ae02f9c911ec895c7113beceeb003f5e'
+                'c77d61bc81119cf645663b3a33ab0267')
 
 depends=('libnotify' 'gconf' 'libxss')
 optdepends=()
@@ -24,4 +26,5 @@ package() {
 
     mkdir -p "$pkgdir/usr/bin"
     install -m755 rocketchat.sh "$pkgdir"/usr/bin/rocketchat
+    install -m755 rocketchat.desktop "$pkgdir"/usr/share/applications/rocketchat.desktop
 }

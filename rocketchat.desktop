@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Rocket.Chat+
+Comment=Rocket.Chat Native Cross-Platform Desktop Application via Electron.
+Exec="/opt/Rocket.Chat+/rocketchat" %U
+Terminal=false
+Type=Application
+Icon=rocketchat
+Categories=Utility;
+StartupWMClass=Rocket.Chat+
+MimeType=x-scheme-handler/rocketchat

@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Launch
-exec firejail /opt/Rocket.Chat+/rocketchat
+exec firejail /opt/Rocket.Chat+/rocketchat $@
